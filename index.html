@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- Roboto Font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<!-- css -->
+	<link rel="stylesheet" href="stylesheets/index.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="start">
+			<div class="title">
+				<h1>GEOMETRY PERSON</h1>
+				<p>find your core personality type in shapes!</p>
+			</div>
+			<div class="square"></div>
+			<div class="circle"></div>
+			<!-- test sharp -->
+<!-- 			<div class="circle2"></div>
+			<div class="circle3"></div> -->
+			<div id="triangle_top" class="triangle"></div>
+			<div id="triangle_bottom" class="triangle"></div>			
+		</div>
+
+		<div class="question1">
+			<div class="block1">
+				<h2>Q1</h2>
+				<div class="question">If one day you get a gift that can change the rule of the world, which ability will you choose?</div>
+				<div class="choice">Choose the answer appeared in your mind instantly</div>
+				<button  onclick="question2(1)">Destroy all humans in the world</button>
+				<button  onclick="question2(2)">Make the war never happened</button>
+				<button  onclick="question2(3)">You won’t get old and live forever</button>				
+			</div>
+			<div class="back_paper"></div>
+			<div class="square"></div>
+			<div class="triangle"></div>
+			<div class="circle"></div>
+		</div>
+
+		<div class="question2">
+			<div class="block1">
+				<h2>Q2</h2>
+				<div class="question">Imagine you’re almost late, but totally lost at a forked road. Which way do you prefer to go?</div>
+				<div class="choice">Choose the answer appeared in your mind instantly</div>
+				<button  onclick="question3(1)">The left one</button>
+				<button  onclick="question3(2)">The right one</button>
+				<button  onclick="question3(3)">Open Google Map</button>				
+			</div>
+			<div class="back_paper"></div>
+			<div class="square"></div>
+			<div class="triangle"></div>
+			<div class="circle"></div>
+		</div>
+
+		<div class="question3">
+			<div class="block1">
+				<h2>Q3</h2>
+				<div class="question">When you’re in a exam which you barely prepared for, which is your priority solution?</div>
+				<div class="choice">Choose the answer appeared in your mind instantly</div>
+				<button  onclick="caculate1(1)">Take a nap right away</button>
+				<button  onclick="caculate1(2)">Fill the answer randomly</button>
+				<button  onclick="caculate1(3)">All fill the ansewr "C"</button>				
+			</div>
+			<div class="back_paper"></div>
+			<div class="square"></div>
+			<div class="triangle"></div>
+			<div class="circle"></div>
+		</div>
+
+		<div class="caculate1">
+			<div class="block1">
+				<h2>ALL DONE!</h2>
+				<p>Keep scrolling to show the result</p>				
+			</div>
+			<div class="triangle1"></div>
+			<div class="triangle2"></div>
+			<div class="triangle3"></div>
+			<div class="triangle4"></div>
+			<div class="triangle5"></div>
+		</div>
+
+		<div class="caculate2">
+			<div class="block1">
+				<h2>NOW CACULATING</h2>
+				<p>Keep scrolling to show the result</p>				
+			</div>
+			<div class="square1"></div>
+			<div class="square2"></div>
+			<div class="square3"></div>
+			<div class="square4"></div>
+			<div class="square5"></div>
+			<div class="square6"></div>
+		</div>
+
+		<div class="caculate3">
+			<div class="block1">
+				<h2>YOU ARE…</h2>
+				<p>Keep scrolling to show the result</p>				
+			</div>
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+			<div class="circle5"></div>
+		</div>
+
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

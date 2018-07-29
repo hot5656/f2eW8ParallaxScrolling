@@ -1,0 +1,1025 @@
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, ../sass/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, ../sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 32, ../sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 45, ../sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 56, ../sass/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 68, ../sass/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 77, ../sass/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 87, ../sass/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 97, ../sass/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 108, ../sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 117, ../sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 125, ../sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 129, ../sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 140, ../sass/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 152, ../sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 168, ../sass/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 178, ../sass/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 187, ../sass/_normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 198, ../sass/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 210, ../sass/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 221, ../sass/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 232, ../sass/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 245, ../sass/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 253, ../sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 262, ../sass/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 272, ../sass/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 282, ../sass/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 291, ../sass/_normalize.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 300, ../sass/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 312, ../sass/_normalize.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 320, ../sass/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 331, ../sass/_normalize.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 339, ../sass/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 8, ../sass/index.scss */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto';
+  margin: 0;
+}
+
+/* line 15, ../sass/index.scss */
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+/* line 19, ../sass/index.scss */
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #1469FF;
+}
+
+/* line 25, ../sass/index.scss */
+.start {
+  position: relative;
+  height: 768px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  overflow: hidden;
+}
+/* line 33, ../sass/index.scss */
+.start .title {
+  z-index: 30;
+  position: absolute;
+  top: 330px;
+  left: 200px;
+}
+/* line 39, ../sass/index.scss */
+.start .title h1 {
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 44, ../sass/index.scss */
+.start .title p {
+  font-size: 24px;
+  text-align: center;
+  font-weight: normal;
+}
+/* line 50, ../sass/index.scss */
+.start .square {
+  z-index: 10;
+  position: absolute;
+  top: 175px;
+  left: 270px;
+  width: 460px;
+  height: 460px;
+  background-color: black;
+}
+/* line 59, ../sass/index.scss */
+.start .circle {
+  z-index: 20;
+  position: absolute;
+  top: 135px;
+  left: 230px;
+  width: 540px;
+  height: 540px;
+  border-radius: 50%;
+  background-color: #0027C8;
+}
+/* line 91, ../sass/index.scss */
+.start .triangle {
+  z-index: 25;
+  position: absolute;
+  border-style: solid;
+}
+/* line 96, ../sass/index.scss */
+.start #triangle_top {
+  top: 186px;
+  left: 332px;
+  border-width: 0 170px 360px;
+  border-color: transparent transparent #FF3C82;
+  transform-origin: 50% 62%;
+}
+/* line 104, ../sass/index.scss */
+.start #triangle_bottom {
+  top: 267px;
+  left: 332px;
+  border-width: 360px 170px 0;
+  transform-origin: 50% 39%;
+  border-color: #FF3C82 transparent transparent;
+}
+
+/* line 115, ../sass/index.scss */
+.question1 {
+  position: relative;
+  height: 768px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  overflow: hidden;
+  display: none;
+}
+/* line 123, ../sass/index.scss */
+.question1 .block1 {
+  width: 380px;
+  margin-left: 122px;
+  margin-top: 80px;
+  position: absolute;
+  z-index: 5;
+}
+/* line 130, ../sass/index.scss */
+.question1 .block1 h2 {
+  color: #FF3C82;
+  font-size: 64px;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+/* line 136, ../sass/index.scss */
+.question1 .block1 .question {
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}
+/* line 142, ../sass/index.scss */
+.question1 .block1 .choice {
+  color: #0027C8;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0 0 20px 0;
+}
+/* line 148, ../sass/index.scss */
+.question1 .block1 button {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  height: 56px;
+  background-color: #1469FF;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  width: 100%;
+}
+/* line 158, ../sass/index.scss */
+.question1 .block1 button:hover {
+  background-color: white;
+  color: #1469FF;
+  cursor: pointer;
+}
+/* line 165, ../sass/index.scss */
+.question1 .back_paper {
+  position: absolute;
+  top: 0;
+  left: 1024px;
+  width: 424px;
+  height: 100%;
+  z-index: 10;
+  background-color: #0027C8;
+  display: inline-block;
+}
+/* line 176, ../sass/index.scss */
+.question1 .square {
+  position: absolute;
+  top: 768px;
+  left: 670px;
+  z-index: 20;
+  width: 180px;
+  height: 180px;
+  background-color: #FF3C82;
+}
+/* line 186, ../sass/index.scss */
+.question1 .triangle {
+  position: absolute;
+  top: 768px;
+  left: 900px;
+  z-index: 20;
+  width: 0;
+  height: 0;
+  border-width: 0 80px 147px;
+  border-style: solid;
+  border-color: transparent transparent white;
+}
+/* line 198, ../sass/index.scss */
+.question1 .circle {
+  position: absolute;
+  top: 768px;
+  left: 670px;
+  z-index: 20;
+  background-color: black;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+/* line 212, ../sass/index.scss */
+.question2 {
+  position: relative;
+  height: 768px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  overflow: hidden;
+  display: none;
+  background: #0027C8;
+}
+/* line 221, ../sass/index.scss */
+.question2 .block1 {
+  width: 380px;
+  margin-top: 80px;
+  position: absolute;
+  top: 0px;
+  right: 122px;
+  right: 0px;
+  z-index: 5;
+  display: inline-block;
+}
+/* line 231, ../sass/index.scss */
+.question2 .block1 h2 {
+  color: #FF3C82;
+  font-size: 64px;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+/* line 237, ../sass/index.scss */
+.question2 .block1 .question {
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}
+/* line 243, ../sass/index.scss */
+.question2 .block1 .choice {
+  color: #1469FF;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0 0 20px 0;
+}
+/* line 249, ../sass/index.scss */
+.question2 .block1 button {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  height: 56px;
+  background-color: #0027C8;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  width: 100%;
+}
+/* line 259, ../sass/index.scss */
+.question2 .block1 button:hover {
+  background-color: white;
+  color: #1469FF;
+  cursor: pointer;
+}
+/* line 266, ../sass/index.scss */
+.question2 .back_paper {
+  position: absolute;
+  top: 0;
+  left: -424px;
+  width: 424px;
+  height: 100%;
+  z-index: 10;
+  background-color: #FF3C82;
+  display: inline-block;
+}
+/* line 277, ../sass/index.scss */
+.question2 .square {
+  position: absolute;
+  top: 900px;
+  left: -150px;
+  z-index: 20;
+  width: 320px;
+  height: 320px;
+  background-color: #1469FF;
+  transform: rotate(-30deg);
+}
+/* line 288, ../sass/index.scss */
+.question2 .triangle {
+  position: absolute;
+  top: 768px;
+  left: 120px;
+  z-index: 20;
+  width: 0;
+  height: 0;
+  border-width: 0 160px 220px;
+  border-style: solid;
+  border-color: transparent transparent white;
+  transform: rotate(40deg);
+}
+/* line 301, ../sass/index.scss */
+.question2 .circle {
+  position: absolute;
+  top: 768px;
+  left: 130px;
+  z-index: 25;
+  background-color: black;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+}
+
+/* line 314, ../sass/index.scss */
+.question3 {
+  position: relative;
+  height: 768px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  overflow: hidden;
+  background-color: #FF3C82;
+  display: none;
+}
+/* line 323, ../sass/index.scss */
+.question3 .block1 {
+  width: 380px;
+  margin-left: 122px;
+  margin-top: 80px;
+  position: absolute;
+  z-index: 5;
+}
+/* line 330, ../sass/index.scss */
+.question3 .block1 h2 {
+  color: #FF3C82;
+  font-size: 64px;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  color: white;
+}
+/* line 337, ../sass/index.scss */
+.question3 .block1 .question {
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  color: black;
+}
+/* line 344, ../sass/index.scss */
+.question3 .block1 .choice {
+  color: #0027C8;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0 0 20px 0;
+  color: black;
+}
+/* line 351, ../sass/index.scss */
+.question3 .block1 button {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  height: 56px;
+  background-color: #FF3C82;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  width: 100%;
+}
+/* line 361, ../sass/index.scss */
+.question3 .block1 button:hover {
+  background-color: white;
+  color: #FF3C82;
+  cursor: pointer;
+}
+/* line 368, ../sass/index.scss */
+.question3 .back_paper {
+  position: absolute;
+  top: 0;
+  left: 1024px;
+  width: 424px;
+  height: 100%;
+  z-index: 10;
+  background-color: #1469FF;
+  display: inline-block;
+}
+/* line 379, ../sass/index.scss */
+.question3 .square {
+  position: absolute;
+  top: 768px;
+  left: 670px;
+  z-index: 20;
+  width: 330px;
+  height: 330px;
+  transform: rotate(2deg);
+  background-color: #0027C8;
+}
+/* line 390, ../sass/index.scss */
+.question3 .triangle {
+  position: absolute;
+  top: 850px;
+  left: 830px;
+  z-index: 20;
+  width: 0;
+  height: 0;
+  border-width: 0 120px 200px;
+  border-style: solid;
+  border-color: transparent transparent black;
+  transform: rotate(90deg);
+}
+/* line 403, ../sass/index.scss */
+.question3 .circle {
+  position: absolute;
+  top: 768px;
+  left: 840px;
+  z-index: 20;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+/* line 416, ../sass/index.scss */
+.caculate1 {
+  position: relative;
+  height: 768px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  overflow: hidden;
+  background-color: #1469FF;
+  display: none;
+}
+/* line 425, ../sass/index.scss */
+.caculate1 .block1 {
+  position: absolute;
+  margin: 0;
+  z-index: 30;
+  top: calc(50% - 70px);
+  left: calc(50% - 170px);
+}
+/* line 432, ../sass/index.scss */
+.caculate1 .block1 h2 {
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 438, ../sass/index.scss */
+.caculate1 .block1 p {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+/* line 444, ../sass/index.scss */
+.caculate1 .triangle1 {
+  position: absolute;
+  z-index: 10;
+  width: 0;
+  height: 0;
+  border-width: 0 350px 650px;
+  border-style: solid;
+  border-color: transparent transparent #0027C8;
+  transform: rotate(-10deg);
+}
+/* line 458, ../sass/index.scss */
+.caculate1 .triangle2 {
+  position: absolute;
+  z-index: 20;
+  width: 0;
+  height: 0;
+  border-width: 0 200px 350px;
+  border-style: solid;
+  border-color: transparent transparent black;
+}
+/* line 471, ../sass/index.scss */
+.caculate1 .triangle3 {
+  position: absolute;
+  z-index: 20;
+  width: 0;
+  height: 0;
+  border-width: 0 120px 210px;
+  border-style: solid;
+  border-color: transparent transparent #0027C8;
+  transform: rotate(35deg);
+}
+/* line 485, ../sass/index.scss */
+.caculate1 .triangle4 {
+  position: absolute;
+  z-index: 20;
+  width: 0;
+  height: 0;
+  border-width: 0 60px 100px;
+  border-style: solid;
+  border-color: transparent transparent black;
+  transform: rotate(-35deg);
+}
+/* line 499, ../sass/index.scss */
+.caculate1 .triangle5 {
+  position: absolute;
+  z-index: 20;
+  width: 0;
+  height: 0;
+  border-width: 0 60px 100px;
+  border-style: solid;
+  border-color: transparent transparent white;
+}
+
+/* line 514, ../sass/index.scss */
+.caculate2 {
+  position: relative;
+  height: 768px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  overflow: hidden;
+  background-color: #0027C8;
+  display: none;
+}
+/* line 523, ../sass/index.scss */
+.caculate2 .block1 {
+  position: absolute;
+  z-index: 30;
+  top: calc(50% - 70px);
+  left: calc(50% - 250px);
+}
+/* line 529, ../sass/index.scss */
+.caculate2 .block1 h2 {
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 535, ../sass/index.scss */
+.caculate2 .block1 p {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+/* line 541, ../sass/index.scss */
+.caculate2 .square1 {
+  position: absolute;
+  z-index: 10;
+  width: 180px;
+  height: 180px;
+  transform: rotate(-15deg);
+  background-color: black;
+}
+/* line 551, ../sass/index.scss */
+.caculate2 .square2 {
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  transform: rotate(30deg);
+  background-color: #1469FF;
+}
+/* line 561, ../sass/index.scss */
+.caculate2 .square3 {
+  position: absolute;
+  z-index: 10;
+  width: 180px;
+  height: 180px;
+  transform: rotate(45deg);
+  background-color: #1469FF;
+}
+/* line 571, ../sass/index.scss */
+.caculate2 .square4 {
+  position: absolute;
+  z-index: 20;
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+  background-color: black;
+}
+/* line 581, ../sass/index.scss */
+.caculate2 .square5 {
+  position: absolute;
+  z-index: 10;
+  width: 120px;
+  height: 120px;
+  transform: rotate(35deg);
+  background-color: #FF3C82;
+}
+/* line 591, ../sass/index.scss */
+.caculate2 .square6 {
+  position: absolute;
+  z-index: 10;
+  width: 250px;
+  height: 250px;
+  transform: rotate(35deg);
+  background-color: #FF3C82;
+}
+
+/* line 603, ../sass/index.scss */
+.caculate3 {
+  position: relative;
+  height: 768px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  overflow: hidden;
+  background-color: #FF3C82;
+  display: none;
+}
+/* line 612, ../sass/index.scss */
+.caculate3 .block1 {
+  position: absolute;
+  z-index: 30;
+  top: calc(50% - 90px);
+  left: calc(50% - 190px);
+}
+/* line 618, ../sass/index.scss */
+.caculate3 .block1 h2 {
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+/* line 625, ../sass/index.scss */
+.caculate3 .block1 p {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: black;
+}
+/* line 632, ../sass/index.scss */
+.caculate3 .circle1 {
+  position: absolute;
+  top: 454px;
+  left: -60px;
+  z-index: 10;
+  background-color: #0027C8;
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+}
+/* line 642, ../sass/index.scss */
+.caculate3 .circle2 {
+  position: absolute;
+  top: 493px;
+  left: 252px;
+  z-index: 10;
+  background-color: #1469FF;
+  width: 137px;
+  height: 137px;
+  border-radius: 50%;
+}
+/* line 652, ../sass/index.scss */
+.caculate3 .circle3 {
+  position: absolute;
+  top: 120px;
+  left: 390px;
+  z-index: 20;
+  background-color: white;
+  width: 460px;
+  height: 460px;
+  border-radius: 50%;
+}
+/* line 662, ../sass/index.scss */
+.caculate3 .circle4 {
+  position: absolute;
+  top: 90px;
+  left: 546px;
+  z-index: 10;
+  background-color: black;
+  width: 395px;
+  height: 395px;
+  border-radius: 50%;
+}
+/* line 672, ../sass/index.scss */
+.caculate3 .circle5 {
+  position: absolute;
+  top: -120px;
+  left: 961px;
+  z-index: 10;
+  background-color: #0027C8;
+  width: 356px;
+  height: 356px;
+  border-radius: 50%;
+}
