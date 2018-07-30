@@ -92,8 +92,8 @@ function question2(num) {
 		TweenMax.to(".question2 .circle", 1.5, {top: 450}), 4);	
 	timeline.add(
 		TweenMax.to(".question2 .circle", 1.5, {top: 410}), 5.5);	
-	// document.getElementsByClassName("caculate2")[0].style.display = "block" ;
-	// caculate2()
+
+	// result_triangle()
 }
 
 function question3(num) {
@@ -255,58 +255,258 @@ function caculate2() {
 
 	// 移動
 	timeline.add(
-		TweenMax.to(".caculate2 .square6", 0.5, {top: '-70%',left: '80%'}), 1);
+		TweenMax.to(".caculate2 .square6", 1, {top: '-70%',left: '80%'}), 1);
 	timeline.add(
-		TweenMax.to(".caculate2 .square1", 0.5, {top: '-95%',left: '103%'}), 1);
+		TweenMax.to(".caculate2 .square1", 1, {top: '-95%',left: '103%'}), 1);
 	timeline.add(
-		TweenMax.to(".caculate2 .square3", 0.5, {top: '-18%',left: '109%'}), 1.5);
+		TweenMax.to(".caculate2 .square3", 1, {top: '-18%',left: '109%'}), 2);
 	timeline.add(
-		TweenMax.to(".caculate2 .square2", 0.5, {top: '-70%',left: '78%'}), 1.5);
+		TweenMax.to(".caculate2 .square2", 1, {top: '-70%',left: '78%'}), 2);
 	timeline.add(
-		TweenMax.to(".caculate2 .square4", 0.5, {top: '-10%',left: '121%'}), 2);
+		TweenMax.to(".caculate2 .square4", 1, {top: '-10%',left: '121%'}), 3);
 	timeline.add(
-		TweenMax.to(".caculate2 .square5", 0.5, {top: '-117%',left: '60%'}), 2);
+		TweenMax.to(".caculate2 .square5", 1, {top: '-117%',left: '60%'}), 3);
 
 	timeline.from(".caculate2",0, {
 		opacity:0
-	},2.5)
+	},4)
 	.set(".caculate2 .square1", {
         top: '50%',
         left: '-68%'
-	},2.5 )
+	},4 )
 	.set(".caculate2 .square2", {
         top: '110%',
         left: '-90%'
-	},2.5 )
+	},4 )
 	.set(".caculate2 .square3", {
         top: '70%',
         left: '-35%'
-	},2.5 )
+	},4 )
 	.set(".caculate2 .square4", {
         top: '170%',
         left: '-70%'
-	},2.5 )
+	},4 )
 	.set(".caculate2 .square5", {
         top: '110%',
         left: '-28%'
-	},2.5 )
+	},4 )
 	.set(".caculate2 .square6", {
         top: '110%',
         left: '30%'
-	},2.5 );
+	},4 );
 
 	// 移動
 	timeline.add(
-		TweenMax.to(".caculate2 .square1", 1, {top: '-95%',left: '103%'}), 2.5);
+		TweenMax.to(".caculate2 .square1", 1, {top: '-95%',left: '103%'}), 4);
 	timeline.add(
-		TweenMax.to(".caculate2 .square3", 1, {top: '-18%',left: '109%'}), 2.5);
+		TweenMax.to(".caculate2 .square3", 1, {top: '-18%',left: '109%'}), 4);
 	timeline.add(
-		TweenMax.to(".caculate2 .square4", 1, {top: '-10%',left: '121%'}), 2.5);
+		TweenMax.to(".caculate2 .square4", 1, {top: '-10%',left: '121%'}), 4);
 }
 
 function caculate3() {
+	var timeline = new TimelineMax({onComplete: result_triangle});
+
 	document.getElementsByClassName("caculate2")[0].style.display = "none" ;
 	document.getElementsByClassName("caculate3")[0].style.display = "block" ;
+
+	timeline.from(".caculate3",1, {
+		opacity:0
+	},0)
+	.set(".caculate3 .circle1", {
+        top: '90%',
+        left: '-30%'
+	},0 )
+	.set(".caculate3 .circle2", {
+        top: '80%',
+        left: '-20%'
+	},0 )
+	.set(".caculate3 .circle3", {
+        top: '70%',
+        left: '-65%'
+	},0 )
+	.set(".caculate3 .circle4", {
+        top: '100%',
+        left: '-40%'
+	},0 )
+	.set(".caculate3 .circle5", {
+        top: '120%',
+        left: '-40%'
+	},0 );
+
+
+	// 移動
+	timeline.add(
+		TweenMax.to(".caculate3 .circle5", 1, {top: '-120%',left: '100%'}), 1);
+	timeline.add(
+		TweenMax.to(".caculate3 .circle3", 1, {top: '-10%',left: '110%'}), 2);
+	timeline.add(
+		TweenMax.to(".caculate3 .circle1", 1, {top: '10%',left: '119%'}), 3);
+	timeline.add(
+		TweenMax.to(".caculate3 .circle4", 1, {top: '10%',left: '100%'}), 3);
+	timeline.add(
+		TweenMax.to(".caculate3 .circle2", 1, {top: '0%',left: '100%'}), 4);
+
+	timeline.from(".caculate3",0, {
+		opacity:0
+	},5)
+	.set(".caculate3 .circle1", {
+        top: '90%',
+        left: '-30%'
+	},5 )
+	.set(".caculate3 .circle2", {
+        top: '80%',
+        left: '-20%'
+	},5)
+	.set(".caculate3 .circle3", {
+        top: '70%',
+        left: '-65%'
+	},5 )
+	.set(".caculate3 .circle4", {
+        top: '100%',
+        left: '-40%'
+	},5 )
+	.set(".caculate3 .circle5", {
+        top: '120%',
+        left: '-40%'
+	},5 );
+
+	// 移動
+	timeline.add(
+		TweenMax.to(".caculate3 .circle5", 1, {top: '-120%',left: '100%'}), 5);
+	timeline.add(
+		TweenMax.to(".caculate3 .circle4", 1, {top: '10%',left: '100%'}), 6);
+	timeline.add(
+		TweenMax.to(".caculate3 .circle2", 1, {top: '0%',left: '100%'}), 6);
+	timeline.add(
+		TweenMax.to(".caculate3  .block1 h2", 0.1, {color: 'white'}), 7);
+	timeline.add(
+		TweenMax.to(".caculate3  .block1 p", 0.1, {color: 'white'}), 7);
+	timeline.add(
+		TweenMax.to(".caculate3 .circle3", 1, {scale: 10}), 7);
+
+}
+
+function result_triangle() {
+	var timeline = new TimelineMax();
+
+	document.getElementsByClassName("caculate3")[0].style.display = "none" ;
+	document.getElementsByClassName("result_triangle")[0].style.display = "block" ;
+
+	timeline.from(".result_triangle",1, {
+		opacity:0
+	},0)
+	.set(".result_triangle .triangle1", {
+        left: '5%',
+        top: '-10%'
+	},0 )
+	.set(".result_triangle .triangle2", {
+        left: '15%',
+        top: '-50%'
+	},0 )
+	.set(".result_triangle .triangle3", {
+        left: '25%',
+        top: '0%'
+	},0 )
+	.set(".result_triangle .triangle4", {
+        left: '27%',
+        top: '-35%'
+	},0 )
+	.set(".result_triangle .triangle5", {
+        left: '65%',
+        top: '-45%'
+	},0 )
+	.set(".result_triangle .triangle6", {
+        left: '75%',
+        top: '-10%'
+	},0 )
+	.set(".result_triangle .triangle7", {
+        left: '90%',
+        top: '-20%'
+	},0 )
+
+	.set(".result_triangle .triangle_b1", {
+        left: '30%',
+        bottom: '-40%'
+	},0 )
+	.set(".result_triangle .triangle_b2", {
+        left: '33%',
+        bottom: '-40%'
+	},0 )
+	.set(".result_triangle .triangle_b3", {
+        left: '38%',
+        bottom: '-48%'
+	},0 );
+
+	// 移動
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle1", 3, {top: '4%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle2", 3, {top: '0%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle3", 3, {top: '50%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle4", 3, {top: '15%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle5", 3, {top: '5%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle6", 3, {top: '40%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle7", 3, {top: '30%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle_b1", 3, {bottom: '0%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle_b2", 3, {bottom: '0%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle_b3", 3, {bottom: '-8%'}), 1);
+
+	// 移動
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle3", 2, {left: '57%',top: '31%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle4", 2, {left: '57%',top: '39%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle5", 2, {left: '57%',top: '47%'}), 4);
+
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle1", 2, {top: '-10%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle2", 2, {top: '-50%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle6", 2, {top: '-10%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle7", 2, {top: '-20%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_triangle .result_descript", 2, {top: '10%',left: '57%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_triangle .result_type", 2,{top: '15%',left: '57%'}), 4);
+
+	timeline.add(
+		TweenMax.to(".result_triangle .show", 0.1,{display: 'block'}), 6);
+
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle_b1", 4,{
+			left: '10%',bottom: '24%',
+			borderWidth: '0 180 310'
+		}), 4);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle_b2", 4,{
+			left: '13%',bottom: '39%',
+			borderWidth: '0 180 310',
+			transform:'rotate(80deg)'
+		}), 4);
+	timeline.add(
+		TweenMax.to(".result_triangle .triangle_b3", 4,{
+			left: '7%',bottom: '44%',
+			borderWidth: '0 180 310',
+			transform:'rotate(-70deg)'
+		}), 4);
+}
+
+function restart() {
+	document.getElementsByClassName("result_triangle")[0].style.display = "none" ;
+	document.getElementsByClassName("start")[0].style.display = "block" ;	
+	start();
 }
 
 start() ;

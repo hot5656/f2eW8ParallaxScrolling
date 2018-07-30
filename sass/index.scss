@@ -631,8 +631,8 @@ h1, h2, h3, h4, h5 , p {
 	}
 	.circle1 {
 		position: absolute;
-		top: 454px;
-		left: -60px;
+		// top: 454px;
+		// left: -60px;
 		z-index: 10;
 		background-color: $primary;
 		width: 256px;
@@ -641,8 +641,8 @@ h1, h2, h3, h4, h5 , p {
 	}
 	.circle2 {
 		position: absolute;
-		top: 493px;
-		left: 252px;
+		// top: 493px;
+		// left: 252px;
 		z-index: 10;
 		background-color: $information;
 		width: 137px;
@@ -651,8 +651,8 @@ h1, h2, h3, h4, h5 , p {
 	}
 	.circle3 {
 		position: absolute;
-		top: 120px;
-		left: 390px;
+		// top: 120px;
+		// left: 390px;
 		z-index: 20;
 		background-color: white;
 		width: 460px;
@@ -661,8 +661,8 @@ h1, h2, h3, h4, h5 , p {
 	}
 	.circle4 {
 		position: absolute;
-		top: 90px;
-		left: 546px;
+		// top: 90px;
+		// left: 546px;
 		z-index: 10;
 		background-color: black;
 		width: 395px;
@@ -671,8 +671,8 @@ h1, h2, h3, h4, h5 , p {
 	}
 	.circle5 {
 		position: absolute;
-		top: -120px;
-		left: 961px;
+		// top: -120px;
+		// left: 961px;
 		z-index: 10;
 		background-color: $primary;
 		width: 356px;
@@ -680,3 +680,368 @@ h1, h2, h3, h4, h5 , p {
 		border-radius: 50%;
 	}
 }
+
+.result_triangle {
+	position: relative;
+	height: 768px;
+	box-sizing: border-box;
+	border: 1px solid white;
+	overflow: hidden;
+	background-color: $information;
+	display : none;
+
+	.result_descript {
+		position: absolute;
+		z-index: 10;
+		font-size: 24px;
+		top: 25%;
+		left:40%;
+	}
+	.result_type {
+		position: absolute;
+		z-index: 10;
+		font-size: 64px;
+		top: 30%;
+		left:37%;
+	}
+
+	.triangle1 {
+		position: absolute;
+		left: 5%;
+		top: 40%;
+		z-index: 10;
+		width: 0;
+		height: 0;
+		border-width: 48px 28px 0;
+		border-style: solid;
+		border-color: black transparent transparent;
+	}
+
+	.triangle2 {
+		position: absolute;
+		left: 15%;
+		top: 0%;
+		z-index: 10;
+		width: 0;
+		height: 0;
+		border-width: 48px 28px 0;
+		border-style: solid;
+		border-color: black transparent transparent;
+	}
+
+	.triangle3 {
+		position: absolute;
+		left: 25%;
+		top: 50%;
+		z-index: 10;
+		width: 0;
+		height: 0;
+		border-width: 48px 28px 0;
+		border-style: solid;
+		border-color: $primary transparent transparent;
+	}
+
+	.triangle4 {
+		position: absolute;
+		left: 27%;
+		top: 15%;
+		z-index: 10;
+		width: 0;
+		height: 0;
+		border-width: 48px 28px 0;
+		border-style: solid;
+		border-color: $primary transparent transparent;
+	}
+
+	.triangle5 {
+		position: absolute;
+		left: 65%;
+		top: 5%;
+		z-index: 10;
+		width: 0;
+		height: 0;
+		border-width: 48px 28px 0;
+		border-style: solid;
+		border-color: $primary transparent transparent;
+	}
+
+	.triangle6 {
+		position: absolute;
+		left: 75%;
+		top: 40%;
+		z-index: 10;
+		width: 0;
+		height: 0;
+		border-width: 48px 28px 0;
+		border-style: solid;
+		border-color: black transparent transparent;
+	}
+
+	.triangle7{
+		position: absolute;
+		left: 90%;
+		top: 30%;
+		z-index: 10;
+		width: 0;
+		height: 0;
+		border-width: 48px 28px 0;
+		border-style: solid;
+		border-color: $primary transparent transparent;
+	}
+
+	.triangle_b1{
+		position: absolute;
+		left: 30%;
+		bottom: 0%;
+		z-index: 30;
+		width: 0;
+		height: 0;
+		border-width: 0 210px 355px;
+		border-style: solid;
+		border-color: transparent transparent $primary;
+	}
+	.triangle_b2{
+		position: absolute;
+		left: 33%;
+		bottom: 0%;
+		z-index: 20;
+		width: 0;
+		height: 0;
+		border-width: 0 210px 355px;
+		border-style: solid;
+		border-color: transparent transparent white;
+	}
+	.triangle_b3{
+		position: absolute;
+		left: 38%;
+		bottom: -8%;
+		z-index: 10;
+		width: 0;
+		height: 0;
+		border-width: 0 210px 355px;
+		border-style: solid;
+		border-color: transparent transparent black;
+	}
+	//-------------
+	.show {
+		display: none;
+
+		.block {
+			position: absolute;
+			font-size: 30px;
+			line-height: 60px;
+			color: $primary;
+			left: 64%;
+			top: 30%;
+		}
+		.note {
+			position: absolute;
+			font-size: 20px;
+			line-height: 36px;		
+			left: 57%;
+			top: 61%;
+			width: 380px;
+		}
+		button {
+			position: absolute;
+			font-size: 24px;
+			margin: 0 0 10px 0;
+			height: 56px;
+			left: 57%;
+			top: 80%;
+			color: white;
+			border: 1px solid white;
+			border-radius: 30px;
+			width:380px;
+			background-color:$information;
+		}
+		button:hover {
+			background-color: white;
+			color: $information;
+			cursor: pointer;
+		}	
+	}
+
+}
+
+
+// .result_triangle2 {
+// 	position: relative;
+// 	height: 768px;
+// 	box-sizing: border-box;
+// 	border: 1px solid white;
+// 	overflow: hidden;
+// 	background-color: $information;
+// 	display : none;
+
+// 	.result_descript {
+// 		position: absolute;
+// 		z-index: 10;
+// 		font-size: 24px;
+// 		top: 10%;
+// 		left:57%;
+// 	}
+// 	.result_type {
+// 		position: absolute;
+// 		z-index: 10;
+// 		font-size: 64px;
+// 		top: 15%;
+// 		left:57%;
+// 	}
+
+// 	.triangle1 {
+// 		position: absolute;
+// 		left: 5%;
+// 		top: 40%;
+// 		z-index: 10;
+// 		width: 0;
+// 		height: 0;
+// 		border-width: 48px 28px 0;
+// 		border-style: solid;
+// 		border-color: black transparent transparent;
+// 	}
+
+// 	.triangle2 {
+// 		position: absolute;
+// 		left: 57%;
+// 		top: 20%;
+// 		z-index: 10;
+// 		width: 0;
+// 		height: 0;
+// 		border-width: 48px 28px 0;
+// 		border-style: solid;
+// 		border-color: black transparent transparent;
+// 	}
+
+// 	.triangle3 {
+// 		position: absolute;
+// 		left: 57%;
+// 		top: 31%;
+// 		z-index: 10;
+// 		width: 0;
+// 		height: 0;
+// 		border-width: 48px 28px 0;
+// 		border-style: solid;
+// 		border-color: $primary transparent transparent;
+// 	}
+
+// 	.triangle4 {
+// 		position: absolute;
+// 		left: 57%;
+// 		top: 39%;
+// 		z-index: 10;
+// 		width: 0;
+// 		height: 0;
+// 		border-width: 48px 28px 0;
+// 		border-style: solid;
+// 		border-color: $primary transparent transparent;
+// 	}
+
+// 	.triangle5 {
+// 		position: absolute;
+// 		left: 57%;
+// 		top: 47%;
+// 		z-index: 10;
+// 		width: 0;
+// 		height: 0;
+// 		border-width: 48px 28px 0;
+// 		border-style: solid;
+// 		border-color: $primary transparent transparent;
+// 	}
+
+// 	.triangle6 {
+// 		position: absolute;
+// 		left: 75%;
+// 		top: 40%;
+// 		z-index: 10;
+// 		width: 0;
+// 		height: 0;
+// 		border-width: 48px 28px 0;
+// 		border-style: solid;
+// 		border-color: black transparent transparent;
+// 	}
+
+// 	.triangle7{
+// 		position: absolute;
+// 		left: 90%;
+// 		top: 30%;
+// 		z-index: 10;
+// 		width: 0;
+// 		height: 0;
+// 		border-width: 48px 28px 0;
+// 		border-style: solid;
+// 		border-color: $primary transparent transparent;
+// 	}
+
+// 	.triangle_b1{
+// 		position: absolute;
+// 		left: 10%;
+// 		bottom: 24%;
+// 		z-index: 30;
+// 		width: 0;
+// 		height: 0;
+// 		border-width: 0 180px 310px;
+// 		border-style: solid;
+// 		border-color: transparent transparent $primary;
+// 	}
+// 	.triangle_b2{
+// 		position: absolute;
+// 		left: 13%;
+// 		bottom: 39%;
+// 		z-index: 20;
+// 		width: 0;
+// 		height: 0;
+// 		border-width: 0 180px 310px;
+// 		border-style: solid;
+// 		border-color: transparent transparent white;
+// 		transform:rotate(80deg);
+// 	}
+// 	.triangle_b3{
+// 		position: absolute;
+// 		left: 7%;
+// 		bottom: 44%;
+// 		z-index: 10;
+// 		width: 0;
+// 		height: 0;
+// 		border-width: 0 180px 310px;
+// 		border-style: solid;
+// 		border-color: transparent transparent black;
+// 		transform:rotate(-70deg);
+// 	}
+
+// 	//-------------
+// 	.block {
+// 		position: absolute;
+// 		font-size: 30px;
+// 		line-height: 60px;
+// 		color: $primary;
+// 		left: 64%;
+// 		top: 30%;
+// 	}
+// 	.note {
+// 		position: absolute;
+// 		font-size: 20px;
+// 		line-height: 36px;		
+// 		left: 57%;
+// 		top: 61%;
+// 		width: 380px;
+// 	}
+// 	button {
+// 		position: absolute;
+// 		font-size: 24px;
+// 		margin: 0 0 10px 0;
+// 		height: 56px;
+// 		left: 57%;
+// 		top: 80%;
+// 		color: white;
+// 		border: 1px solid white;
+// 		border-radius: 30px;
+// 		width:380px;
+// 		background-color:$information;
+// 	}
+// 	button:hover {
+// 		background-color: white;
+// 		color: $information;
+// 		cursor: pointer;
+// 	}	
+// }
