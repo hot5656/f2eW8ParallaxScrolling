@@ -1,3 +1,5 @@
+var counterValue = 0;
+
 function start() {
 	// generate a timeline
 	var timeline1 = new TimelineMax({onComplete: question1})
@@ -46,6 +48,7 @@ function start() {
 function question1() {
 	var timeline = new TimelineMax();
 	document.getElementsByClassName("start")[0].style.display = "none" ;
+
 	document.getElementsByClassName("question1")[0].style.display = "block" ;
 
 	// show back_paper
@@ -67,9 +70,12 @@ function question1() {
 
 function question2(num) {
 	console.log("num = "+ num);
+	
 	var timeline = new TimelineMax();
 	document.getElementsByClassName("question1")[0].style.display = "none" ;
 	document.getElementsByClassName("question2")[0].style.display = "block" ;
+
+	counterValue+=num ;
 
 	// show back_paper
 	timeline.add(
@@ -92,8 +98,6 @@ function question2(num) {
 		TweenMax.to(".question2 .circle", 1.5, {top: 450}), 4);	
 	timeline.add(
 		TweenMax.to(".question2 .circle", 1.5, {top: 410}), 5.5);	
-
-	// result_triangle()
 }
 
 function question3(num) {
@@ -101,6 +105,8 @@ function question3(num) {
 	var timeline = new TimelineMax();
 	document.getElementsByClassName("question2")[0].style.display = "none" ;
 	document.getElementsByClassName("question3")[0].style.display = "block" ;
+
+	counterValue+=num ;
 
 	// show back_paper
 	timeline.add(
@@ -121,15 +127,13 @@ function question3(num) {
 		TweenMax.to(".question3 .circle", 2, {top: -100,left: 800}), 4);	
 }
 
-function count(num) {
-	console.log("num = "+ num);
-}
-
 function caculate1(num) {
 	var timeline = new TimelineMax( {onComplete: caculate2} );
 
 	document.getElementsByClassName("question3")[0].style.display = "none" ;
 	document.getElementsByClassName("caculate1")[0].style.display = "block" ;
+
+	counterValue+=num ;
 
 	timeline.from(".caculate1",1, {
 		opacity:0
@@ -191,7 +195,6 @@ function caculate1(num) {
         left: '-21%'
 	},4 );
 
-
 	// 移動
 	timeline.add(
 		TweenMax.to(".caculate1 .triangle3", 1, {top: '-70%',left: '80%'}), 4);
@@ -203,7 +206,6 @@ function caculate1(num) {
 		TweenMax.to(".caculate1 .triangle4", 1, {top: '-10%',left: '121%'}), 5);
 	timeline.add(
 		TweenMax.to(".caculate1 .triangle1", 1, {top: '-117%',left: '78%'}), 6);
-
 
 	timeline.from(".caculate1",0, {
 		opacity:0
@@ -305,7 +307,7 @@ function caculate2() {
 }
 
 function caculate3() {
-	var timeline = new TimelineMax({onComplete: result_triangle});
+	var timeline = new TimelineMax({onComplete: counter_result});
 
 	document.getElementsByClassName("caculate2")[0].style.display = "none" ;
 	document.getElementsByClassName("caculate3")[0].style.display = "block" ;
@@ -333,7 +335,6 @@ function caculate3() {
         top: '120%',
         left: '-40%'
 	},0 );
-
 
 	// 移動
 	timeline.add(
@@ -384,8 +385,20 @@ function caculate3() {
 		TweenMax.to(".caculate3  .block1 p", 0.1, {color: 'white'}), 7);
 	timeline.add(
 		TweenMax.to(".caculate3 .circle3", 1, {scale: 10}), 7);
-
 }
+
+function counter_result() {
+	if (counterValue <= 4) {
+		result_triangle() ;
+	}
+	else if (counterValue <= 6) {
+		result_rectangle() ;
+	}
+	else {
+		result_circle() ;
+	}
+} 
+
 
 function result_triangle() {
 	var timeline = new TimelineMax();
@@ -406,7 +419,7 @@ function result_triangle() {
 	},0 )
 	.set(".result_triangle .triangle3", {
         left: '25%',
-        top: '0%'
+        top: '-10%'
 	},0 )
 	.set(".result_triangle .triangle4", {
         left: '27%',
@@ -427,15 +440,15 @@ function result_triangle() {
 
 	.set(".result_triangle .triangle_b1", {
         left: '30%',
-        bottom: '-40%'
+        bottom: '-48%'
 	},0 )
 	.set(".result_triangle .triangle_b2", {
         left: '33%',
-        bottom: '-40%'
+        bottom: '-48%'
 	},0 )
 	.set(".result_triangle .triangle_b3", {
         left: '38%',
-        bottom: '-48%'
+        bottom: '-56%'
 	},0 );
 
 	// 移動
@@ -500,6 +513,206 @@ function result_triangle() {
 			left: '7%',bottom: '44%',
 			borderWidth: '0 180 310',
 			transform:'rotate(-70deg)'
+		}), 4);
+}
+
+function result_rectangle() {
+	var timeline = new TimelineMax();
+
+	document.getElementsByClassName("caculate3")[0].style.display = "none" ;
+	document.getElementsByClassName("result_rectangle")[0].style.display = "block" ;
+
+	timeline.from(".result_rectangle",1, {
+		opacity:0
+	},0)
+	.set(".result_rectangle .square1", {
+        top: '-43%'
+	},0 )
+	.set(".result_rectangle .square2", {
+        top: '-10%'
+	},0 )
+	.set(".result_rectangle .square3", {
+        top: '-25%'
+	},0 )
+	.set(".result_rectangle .square4", {
+        top: '-41%'
+	},0 )
+	.set(".result_rectangle .square5", {
+        top: '-15%'
+	},0 )
+	.set(".result_rectangle .square6", {
+        top: '-20%'
+	},0 )
+
+	.set(".result_rectangle .square_b1", {
+        top: '103%'
+	},0 )
+	.set(".result_rectangle .square_b2", {
+        top: '106%'
+	},0 )
+	.set(".result_rectangle .square_b3", {
+        top: '100%'
+	},0 );
+
+	// 移動
+	timeline.add(
+		TweenMax.to(".result_rectangle .square1", 3, {top: '-3%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_rectangle .square2", 3, {top: '40%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_rectangle .square3", 3, {top: '15%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_rectangle .square4", 3, {top: '15%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_rectangle .square5", 3, {top: '-1%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_rectangle .square6", 3, {top: '25%'}), 1);
+
+	timeline.add(
+		TweenMax.to(".result_rectangle .square_b1", 3, {top: '50%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_rectangle .square_b2", 3, {top: '53%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_rectangle .square_b3", 3, {top: '47%'}), 1);
+
+	// 移動
+	timeline.add(
+		TweenMax.to(".result_rectangle .square1", 2, {left: '57%',top: '31%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_rectangle .square3", 2, {left: '57%',top: '39%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_rectangle .square5", 2, {left: '57%',top: '47%'}), 4);
+
+	timeline.add(
+		TweenMax.to(".result_rectangle .square2", 2, {top: '-10%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_rectangle .square4", 2, {top: '-51%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_rectangle .square6", 2, {top: '-30%'}), 4);
+
+	timeline.add(
+		TweenMax.to(".result_rectangle .result_descript", 2, {top: '10%',left: '57%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_rectangle .result_type", 2,{top: '15%',left: '57%'}), 4);
+
+	timeline.add(
+		TweenMax.to(".result_rectangle .show", 0.1,{display: 'block'}), 6);
+
+	timeline.add(
+		TweenMax.to(".result_rectangle .square_b1", 4,{
+			left: '15%',top: '35%',
+			width: '280',height: '280',
+			transform:'rotate(105deg)'
+		}), 4);
+	timeline.add(
+		TweenMax.to(".result_rectangle .square_b2", 4,{
+			left: '10%',top: '33%',
+			width: '280',height: '280'
+		}), 4);
+	timeline.add(
+		TweenMax.to(".result_rectangle .square_b3", 4,{
+			left: '15%',top: '40%',
+			width: '280',height: '280',
+			transform:'rotate(-18deg)'
+		}), 4);
+}
+
+function result_circle() {
+	var timeline = new TimelineMax();
+
+	document.getElementsByClassName("caculate3")[0].style.display = "none" ;
+	document.getElementsByClassName("result_circle")[0].style.display = "block" ;
+
+	timeline.from(".result_circle",1, {
+		opacity:0
+	},0)
+	.set(".result_circle .circle1", {
+        top: '-42%'
+	},0 )
+	.set(".result_circle .circle2", {
+        top: '-25%'
+	},0 )
+	.set(".result_circle .circle3", {
+        top: '-50%'
+	},0 )
+	.set(".result_circle .circle4", {
+        top: '-35%'
+	},0 )
+	.set(".result_circle .circle5", {
+        top: '-52%'
+	},0 )
+	.set(".result_circle .circle6", {
+        top: '-13%'
+	},0 )
+
+	.set(".result_circle .circle_b1", {
+        top: '100%'
+	},0 )
+	.set(".result_circle .circle_b2", {
+        top: '103%'
+	},0 )
+	.set(".result_circle .circle_b3", {
+        top: '102%'
+	},0 );
+
+	// 移動
+	timeline.add(
+		TweenMax.to(".result_circle .circle1", 3, {top: '8%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_circle .circle2", 3, {top: '25%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_circle .circle3", 3, {top: '0%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_circle .circle4", 3, {top: '15%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_circle .circle5", 3, {top: '-2.5%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_circle .circle6", 3, {top: '37%'}), 1);
+
+	timeline.add(
+		TweenMax.to(".result_circle .circle_b1", 3, {top: '50%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_circle .circle_b2", 3, {top: '53%'}), 1);
+	timeline.add(
+		TweenMax.to(".result_circle .circle_b3", 3, {top: '51.5%'}), 1);
+
+	// 移動
+	timeline.add(
+		TweenMax.to(".result_circle .circle1", 2, {left: '57%',top: '31%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_circle .circle3", 2, {left: '57%',top: '39%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_circle .circle6", 2, {left: '57%',top: '47%'}), 4);
+
+	timeline.add(
+		TweenMax.to(".result_circle .circle2", 2, {top: '-25%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_circle .circle4", 2, {top: '-35%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_circle .circle5", 2, {top: '-52%'}), 4);
+
+	timeline.add(
+		TweenMax.to(".result_circle .result_descript", 2, {top: '10%',left: '57%'}), 4);
+	timeline.add(
+		TweenMax.to(".result_circle .result_type", 2,{top: '15%',left: '57%'}), 4);
+
+	timeline.add(
+		TweenMax.to(".result_circle .show", 0.1,{display: 'block'}), 6);
+
+	timeline.add(
+		TweenMax.to(".result_circle .circle_b1", 4,{
+			left: '15%',top: '15%',
+			width: '300',height: '300'
+		}), 4);
+	timeline.add(
+		TweenMax.to(".result_circle .circle_b2", 4,{
+			left: '10%',top: '33%',
+			width: '300',height: '300'
+		}), 4);
+	timeline.add(
+		TweenMax.to(".result_circle .circle_b3", 4,{
+			left: '15%',top: '35%',
+			width: '300',height: '300'
 		}), 4);
 }
 
